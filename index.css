@@ -1,0 +1,59 @@
+body{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+input{
+  height: 2.5rem;
+  width: 15rem;
+  padding-left: 1rem;
+  background-color: 	hsl(240, 100%, 86%, 0.3);
+  border: transparent;
+  border-radius: 10px;
+  font-family: "SGR";
+  color: #b8b8ff;
+  outline: .13rem solid #b8b8ff;
+}
+input::placeholder{
+  color: #b8b8ff;
+}
+input:invalid{
+  animation: shake 0.9s;
+}
+@keyframes shake {
+  25%{
+    transform: translate(4px);
+  }
+  50%{
+    transform: translate(-4px);
+  }
+  75%{
+    transform: translate(4px);
+  }
+}
+input::placeholder {
+  color: var(--c, #b8b8ff);
+}
+.res,.err{
+  font-family: "SGR";
+  text-align: left;
+}
+.err{
+  margin-top: 5px;
+  margin-left: -110px;
+}
+.res{
+  margin-left: -50px;
+  margin-top: 5px;
+  color: #b8b8ff;
+}
+
+@font-face {
+  font-family: "SGR";
+  src: url("/SpaceGrotesk-Regular.ttf");
+}
