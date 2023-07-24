@@ -6,20 +6,18 @@
   <title>Shortly</title>
   <script src="index.js" type="module">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <form>
-    <input type="text" name="input" placeholder="https://company.com" aria-label="input-field" id="input" value=""/>
-  </form>
-  
-  <span id="result" class="res">
+  <input type="text" name="input" placeholder="https://company.com" aria-label="input-field" class="input" id="input" value="" autocomplete="off"/>
+    <div class="cont">
+      <input id="result" class="res" readonly value="" type="text"/>
+      <button id="btn"><img src="./copy-solid.svg"/></button>
+    </div>
+    <span id="err" class="err">
 
-  </span>
-  <span id="err" class="err">
-
-  </span>
+    </span>
 </body>
 </html>

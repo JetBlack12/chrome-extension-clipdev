@@ -1,0 +1,10 @@
+{
+  "name":"ClipDev",
+  "version":"1.0.0",
+  "manifest_version": 3,
+  "description":"An extension to easily shorten any url!",
+  "action": {
+    "default_title": "ClipDev",  
+    "default_popup": "index.html" 
+  }
+}

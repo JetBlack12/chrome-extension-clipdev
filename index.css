@@ -1,46 +1,73 @@
 body{
   display: flex;
   flex-direction: column;
-  text-align: left;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #fff;
+  text-align: left;
+  padding: 1rem;
+  padding-right: 2rem;
+  background-color: #273043;
+  border-radius: 10px;
 }
 
-input{
+.input{
   height: 2.5rem;
-  width: 15rem;
+  width: 95%;
   padding-left: 1rem;
-  background-color: 	hsl(240, 100%, 86%, 0.3);
+  background-color: 		hsl(152, 41%, 52%, 0.3);
   border: transparent;
   border-radius: 10px;
   font-family: "SGR";
-  color: #b8b8ff;
-  outline: .13rem solid #b8b8ff;
+  color: #52b788;
+  outline: .13rem solid #52b788;
 }
-input::placeholder{
-  color: #b8b8ff;
+.input::placeholder{
+  color: #40916c;
 }
 
-input::placeholder {
-  color: var(--c, #b8b8ff);
+.input::placeholder {
+  color: var(--c, #52b788);
 }
 .res,.err{
   font-family: "SGR";
-  text-align: left;
+  
 }
 .err{
-  margin-top: 5px;
-  margin-left: -110px;
+  margin-top: 8px;
+  position: absolute;
+  top: 4.3rem;
+  font-size: 15px;
 }
 .res{
-  margin-left: -50px;
-  margin-top: 5px;
-  color: #b8b8ff;
+  color: #52b788;
+  border: transparent;
+  outline: none;
+  width: 15rem;
+  font-size: 15px;
+  background-color: transparent;
+}
+.res::placeholder{
+  font-size: 15px;
+}
+button{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  background-color: #52b788;
+  border: transparent;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  visibility: hidden;
+  margin-right: -0.3rem;
+  margin-top: 3px;
 }
 
 @font-face {
   font-family: "SGR";
   src: url("/SpaceGrotesk-Regular.ttf");
+}
+
+.cont{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }
